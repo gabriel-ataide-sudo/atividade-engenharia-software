@@ -3,9 +3,7 @@ export function media(a: number, b: number): number {
 }
 
 export function verificaSituacao(a: number,b: number): string {
-    var result = media(a,b);
-
-    if (result >= 7) {
+    if (media(a,b) >= 7) {
         return "APROVADO";
     }
     return "REPROVADO";
