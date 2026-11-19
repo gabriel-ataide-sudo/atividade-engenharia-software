@@ -1,0 +1,40 @@
+Nunca encostrei em javascript na minha vida
+Não faço ideia do que eu tô fazendo
+
+npm init -y
+npm install -D typescript vitest
+
+# src/soma.test.ts
+import {test, expect} from 'vitest';
+import { 'soma' } from '../initial/soma'
+
+test('soma', () => {
+    expect(soma(8,1)).toBe(9);
+})
+
+# src/soma.ts
+export function soma(a: number, b: number): number {
+    # Segunda etapa
+    # var result = a + b;
+    # return result
+    # Terceira etapa
+    # return a + b;
+    return 0;
+}
+
+# src/media.test.ts
+import {test, expect} from 'vitest';
+import { calcularMedia } from './media'; 
+
+test('Calcular a média entre dois números', () => {
+    expect(calcularMedia(8,9)).toBe(8.5)
+})
+
+# /src/media.ts
+export function calcularMedia(a: number, b: niumber): number {
+    var result = a+b / 2;
+    return result;
+}
+
+# Executar o teste
+npx vitest run
