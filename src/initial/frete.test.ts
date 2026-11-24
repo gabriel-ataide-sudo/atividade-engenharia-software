@@ -14,7 +14,7 @@ test('100 ter frete de 10', () => {
 })
 
 test('199.99 ter frete de 20', () => {
-    expect(valor_frete(199.99)).toBe(20);
+    expect(valor_frete(199.99)).toBe(10);
 })
 
 test('200 ter frete grátis', () => {

@@ -1,4 +1,10 @@
 export function valor_frete(preco: number): number {
-    // se deixar 0 o teste de 200 passa kkk
-    return 1
+    if (preco < 100) {
+        return 20
+    } else if (preco >= 100 && preco < 200) {
+        return 10
+    } else if (preco > 200) {
+        return 0
+    }
+    return 0
 }
