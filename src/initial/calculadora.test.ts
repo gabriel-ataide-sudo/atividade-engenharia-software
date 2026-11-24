@@ -18,5 +18,6 @@ test('divisão de 18 e 9 deve ser 2', () => {
 })
 
 test('divisão de 1 por 0 deve retornar erro', () => {
-    expect(divisao(0,0)).toThrow("Divisão por zero");
+    // tirado daqui https://vitest.dev/api/expect#tothrow
+    expect(() => divisao(1,0)).toThrow("Divisão por zero");
 })
